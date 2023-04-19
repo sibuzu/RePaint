@@ -172,7 +172,7 @@ def main(conf: conf_mgt.Default_Conf):
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
-    parser.add_argument('--conf_path', type=str, required=False, default=None)
+    parser.add_argument('--conf_path', type=str, required=False, default="confs/test_c256_thick.yml")
     args = vars(parser.parse_args())
 
     conf_arg = conf_mgt.conf_base.Default_Conf()
